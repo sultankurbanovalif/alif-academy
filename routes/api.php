@@ -16,15 +16,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-//    return $request->user();
-//});
-
-
-//Route::get('users', [\App\Http\Controllers\UserController::class, 'index']);
-//Route::get('users/{id}', [\App\Http\Controllers\UserController::class, 'show']);
-//Route::delete('users/{id}', [\App\Http\Controllers\UserController::class, 'destroy']);
-
 Route::middleware(CheckClientHasApiToken::class)->group(function () {
     Route::get('users', [UserController::class, 'index']);
     Route::get('users/{id}', [UserController::class, 'show']);
