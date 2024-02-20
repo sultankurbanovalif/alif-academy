@@ -58,10 +58,3 @@ class User extends Authenticatable
         return $this->belongsToMany(Organization::class);
     }
 }
-
-
-
-/// v1        File1.php File2.php
-/// v1.1      File1.php - File1.php(v1)
-/// v1.2
-/// v1.3

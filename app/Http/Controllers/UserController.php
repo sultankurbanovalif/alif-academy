@@ -156,8 +156,3 @@ class UserController extends Controller
         return new UserResource($user);
     }
 }
-
-// Трейты
-// Dependency injection (DI)
-// Handler.php
-// Middleware localization
