@@ -25,4 +25,5 @@ Route::middleware(CheckClientHasApiToken::class)->group(function () {
     Route::get('organizations/{organization_id}/users', [UserController::class, 'getOrganizationUsers']);
     Route::get('organizations/{organization_id}/users/{user_id}', [UserController::class, 'getOrganizationUserById']);
 
+    Route::post('organizations/test', []);
 });
